@@ -1,1 +1,3 @@
-"serviceWorker"in navigator&&window.addEventListener("load",(function(){navigator.serviceWorker.register("service-worker.js").then((e=>{})).catch((e=>{}))}));
+"serviceWorker" in navigator && window.addEventListener("load", (function () {
+    navigator.serviceWorker.register("service-worker.js").then((e => {})).catch((e => {}))
+}));

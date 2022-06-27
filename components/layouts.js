@@ -3,12 +3,10 @@ import Footer from "./footer";
 import Header from "./header";
 import Offcanvas from "./offcanvas";
 import Welome from "./welcome";
-import Preloader from "./preloader";
 
 const Layout = ({children}) => {
     return(
         <div>
-            <Preloader/>
             <Header/>
             <Offcanvas/>
             <Welome/>
