@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.text-yellow {
+  color: #f9c851;
+}
+
+.small-text {
+  font-size: 0.6rem;
+}
+
+
