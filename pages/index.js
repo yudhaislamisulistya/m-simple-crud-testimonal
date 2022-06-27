@@ -1,6 +1,6 @@
 import List from "../components/home/list";
 
-export async function getServerSideProps(){
+export async function getServerSideProps(context){
     const dev = process.env.NODE_ENV !== 'production'
     const { DEV_URL, PROD_URL } = process.env
 
@@ -9,7 +9,7 @@ export async function getServerSideProps(){
 
     return {
         props: {
-          testimonials: data.data,
+          testimonials: data.data || null,
           url: dev ? DEV_URL : PROD_URL
         }
     }
