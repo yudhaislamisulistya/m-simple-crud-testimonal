@@ -1,6 +1,6 @@
 import List from "../components/home/list";
 
-export async function getServerSideProps(context){
+export async function getServerSideProps(){
     const dev = process.env.NODE_ENV !== 'production'
     const { DEV_URL, PROD_URL } = process.env
 
