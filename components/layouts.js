@@ -2,7 +2,6 @@ import Script from "next/script";
 import Footer from "./footer";
 import Header from "./header";
 import Offcanvas from "./offcanvas";
-import Preloader from "./preloader";
 import Welome from "./welcome";
 
 const Layout = ({children}) => {
