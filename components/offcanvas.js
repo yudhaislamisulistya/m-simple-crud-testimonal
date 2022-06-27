@@ -1,6 +1,6 @@
 const Offcanvas = () => {
     return(
-        <div className="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1"
+        <div className="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabIndex="-1"
         aria-labelledby="affanOffcanvsLabel">
             <button className="btn-close btn-close-white text-reset" type="button" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
@@ -8,7 +8,7 @@ const Offcanvas = () => {
                 <div className="sidenav-wrapper">
                     <div className="sidenav-profile bg-gradient">
                         <div className="sidenav-style1"></div>
-                        <div className="user-profile"><img src="images/2.jpg" alt/></div>
+                        <div className="user-profile"><img src="images/2.jpg" alt="profile"/></div>
                         <div className="user-info">
                         <h6 className="user-name mb-0">Affan Islam</h6><span>CEO, Designing World</span>
                         </div>

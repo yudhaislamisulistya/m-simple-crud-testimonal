@@ -5,7 +5,7 @@ export default function About(){
                 <div className="col-12">
                     <div className="card team-member-card shadow mt-5">
                         <div className="card-body">
-                            <div className="team-member-img shadow-sm"><img src="images/avatar.jpeg" alt=""/></div>
+                            <div className="team-member-img shadow-sm"><img src="images/avatar.jpeg" alt="avatar"/></div>
                             <div className="team-info">
                                 <h3 className="mb-1 fz-20">Yudha Islami Sulistya</h3>
                                 <h6 className="mb-3 fz-14">Machine Learning Engineer & Software Developer</h6>
