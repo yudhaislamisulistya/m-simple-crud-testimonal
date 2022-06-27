@@ -11,7 +11,7 @@ const Welome = () => {
                     d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
                 </svg>
                 <div className="toast-text ms-3 me-2">
-                    <p className="mb-1 text-white">Welcome to Affan!</p><small className="d-block">Click the "Add to Home Screen" button
+                    <p className="mb-1 text-white">Welcome to Guest!</p><small className="d-block">Click the "Add to Home Screen" button
                     &amp; enjoy it like an app.</small>
                 </div>
             </div>

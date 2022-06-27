@@ -1,33 +1,26 @@
-import Link from "next/link";
+import List from "../components/home/list";
 
-export default function Home(){
+export async function getServerSideProps(){
+    const dev = process.env.NODE_ENV !== 'production'
+    const { DEV_URL, PROD_URL } = process.env
+
+    const res = await fetch(`${dev ? DEV_URL : PROD_URL}/api/get`)
+    const data = await res.json()
+
+    return {
+        props: {
+          testimonials: data.data,
+          url: dev ? DEV_URL : PROD_URL
+        }
+    }
+}
+
+export default function Home({ testimonials }){
   return(
     <div>
       <div className="pt-5 mt-2"></div>
       <div className="container">
-        <div className="card single-product-card">
-          <div className="card-body">
-            <div className="d-flex align-items-center">
-              <div className="row">
-                <div className="col-10">
-                  <div className="card-content">
-                    <a className="product-title d-block text-truncate mt-0" href="page-shop-details.html">Kasmira</a>
-                    <p className="sale-price">Yap layanan ini sangat bagus dan sangat terjamin</p>
-                  </div>
-                </div>
-                <div className="col-2 text-end align-self-center">
-                  <i className="bi bi-star-fill text-yellow"/>
-                  <span className="d-block"/>
-                  <Link href={'/about'}>
-                    <a>
-                      <i className="bi bi-arrow-bar-right d-inline-block"/><span className="small-text align-middle">Detail</span>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {testimonials != null ? testimonials.map((testimonial, index) => (<List key={index} testimonial={testimonial} />)) : <div className="text-center">No data</div>}
       </div>
       <div className="pb-3"></div>
     </div>
