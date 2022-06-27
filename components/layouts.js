@@ -3,11 +3,12 @@ import Footer from "./footer";
 import Header from "./header";
 import Offcanvas from "./offcanvas";
 import Welome from "./welcome";
+import Preloader from "./preloader";
 
 const Layout = ({children}) => {
     return(
         <div>
-            {/* <Preloader/> */}
+            <Preloader/>
             <Header/>
             <Offcanvas/>
             <Welome/>
@@ -26,6 +27,7 @@ const Layout = ({children}) => {
             <Script src="/js/isotope.pkgd.min.js" strategy="beforeInteractive"/>
             <Script src="/js/dark-rtl.js" strategy="afterInteractive"/>
             <Script src="/js/active.js" strategy="beforeInteractive"/>
+            <Script src="/js/pwa.js" strategy="beforeInteractive"/>
         </div>
     )
 }

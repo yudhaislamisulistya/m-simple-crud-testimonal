@@ -1,12 +1,14 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+    const router = useRouter();
     return (
         <div className="footer-nav-area" id="footerNav">
             <div className="container px-0">
             <div className="footer-nav position-relative">
                 <ul className="h-100 d-flex align-items-center justify-content-between ps-0">
-                <li className="active">
+                <li className={router.asPath == "/" ? "active" : null}>
                     <Link href={'/'}>
                         <a href="page-home.html">
                         <svg className="bi bi-house" width="20" height="20" viewBox="0 0 16 16" fill="currentColor"
@@ -18,7 +20,7 @@ const Footer = () => {
                         </svg><span>Home</span></a>
                     </Link>
                 </li>
-                <li>
+                <li className={router.asPath == "/create" ? "active" : null}>
                     <Link href="/create">
                         <a>
                         <svg className="bi bi-collection" width="20" height="20" viewBox="0 0 16 16" fill="currentColor"
@@ -28,7 +30,7 @@ const Footer = () => {
                         </svg><span>Create</span></a>
                     </Link>
                 </li>
-                <li>
+                <li className={router.asPath == "/about" ? "active" : null}>
                     <Link href={'/about'}>
                         <a>
                         <svg className="bi bi-person" width="20" height="20" viewBox="0 0 16 16" fill="currentColor"
