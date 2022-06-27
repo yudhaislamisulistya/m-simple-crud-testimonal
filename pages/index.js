@@ -5,14 +5,14 @@ export default function Home(){
     <div>
       <div className="pt-5 mt-2"></div>
       <div className="container">
-        <div class="card single-product-card">
-          <div class="card-body">
-            <div class="d-flex align-items-center">
+        <div className="card single-product-card">
+          <div className="card-body">
+            <div className="d-flex align-items-center">
               <div className="row">
                 <div className="col-10">
-                  <div class="card-content">
-                    <a class="product-title d-block text-truncate mt-0" href="page-shop-details.html">Kasmira</a>
-                    <p class="sale-price">Yap layanan ini sangat bagus dan sangat terjamin</p>
+                  <div className="card-content">
+                    <a className="product-title d-block text-truncate mt-0" href="page-shop-details.html">Kasmira</a>
+                    <p className="sale-price">Yap layanan ini sangat bagus dan sangat terjamin</p>
                   </div>
                 </div>
                 <div className="col-2 text-end align-self-center">
