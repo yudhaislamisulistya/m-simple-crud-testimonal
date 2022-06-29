@@ -18,6 +18,12 @@ module.exports = withPWA({
 module.exports = {
   extends: [
     'plugin:@next/next/recommended',
-  ]
+  ],
+  images: {
+    domains: ['images.ctfassets.net'],
+    disableStaticImages: true,
+    minimumCacheTTL: 60,
+  }
 }
+
 

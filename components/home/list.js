@@ -1,14 +1,12 @@
 import Link from "next/link";
-
 const List = ({ testimonial }) => {
-    const {name, comment, star} = testimonial
+    const {_id, name, comment, star} = testimonial
     const stars = []
     for (let i = 0; i < star; i++) {
         stars.push(<i className="bi bi-star-fill text-yellow small-text"></i>)
     }
-    console.log(stars);
     return(
-        <div className="card single-product-card">
+        <div className="card single-product-card mt-2">
             <div className="card-body">
                 <div className="row">
                     <div className="col-10">
@@ -20,7 +18,7 @@ const List = ({ testimonial }) => {
                     <div className="col-2 text-end align-self-top">
                         {stars}
                         <span className="d-block"/>
-                        <Link href={'/about'}>
+                        <Link href={'/testimonial/' + _id}>
                         <a>
                             <i className="bi bi-arrow-bar-right d-inline-block"/><span className="small-text align-middle">Detail</span>
                         </a>

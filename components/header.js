@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 
 const Header = () => {
 
@@ -10,7 +10,13 @@ const Header = () => {
                 <div className="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
                     <div className="logo-wrapper">
                         <Link href={'/'}>
-                            <a><img src="images/logo-yudha.png" alt="logo"/></a>
+                            <a>
+                                <Image
+                                    src="/images/logo-yudha.png"
+                                    width={65}
+                                    height={65}
+                                />
+                            </a>
                         </Link>
                     </div>
                     <div className="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas"
