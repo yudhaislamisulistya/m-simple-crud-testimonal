@@ -1,5 +1,5 @@
 import { ObjectId } from "mongodb"
-import { connect } from "../../util/mongodb"
+import { connect } from "../../lib/mongodb"
 
 export default async function(req, res){
     if(req.method !== 'DELETE'){

@@ -1,5 +1,4 @@
 import { ObjectId } from "mongodb"
-import { connect } from "../../util/mongodb"
 
 export default async function(req, res){
     if(req.method !== 'GET'){
